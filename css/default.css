@@ -456,12 +456,19 @@ box-sizing:content-box;
 /* skyscanner style(22.1.28) */
 
 .header-top{
+  font-size: 1.125rem;
+  background: blue;
+  color: white;
+}
+.header-top > ul{
   max-width: 1050px;
   margin: 0 auto;
-  height: 80px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  column-gap: 5px;
+}
+.header-top > ul a{
+  color: white !important;
 }
 .header-top a.help{
   color: blue;

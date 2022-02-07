@@ -16,15 +16,7 @@ include_once(G5_THEME_PATH.'/head.php');
 ?>
 
 <section>
-    <article>
-        <div class="ticketing">
-            <div class="ticket-btns">
-                <button id="ticket_airplane" class="selected"><i class="fa fa-plane" aria-hidden="true"></i> 항공권</button>
-                <button id="ticket_hotel"><i class="fa fa-building" aria-hidden="true"></i> 호텔</button>
-                <button id="ticket_rent"><i class="fa fa-car" aria-hidden="true"></i> 렌터카</button>
-            </div>
-        </div>
-    </article>
+    메인 인덱스
 </section>
 
 <?php
