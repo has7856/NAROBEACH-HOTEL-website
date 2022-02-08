@@ -1,0 +1,46 @@
+body{
+    font: normal 16px/1.5 "Noto Sans KR","Nanum Gothic","Rufina", sans-serif;
+}
+a, a:link{
+    text-decoration: none;
+    color: white;
+}
+
+
+header{
+    background: url("../images/img-header.png") center / cover;
+    min-height: 1080px;
+}
+.header-main{
+    width: 100%;
+    margin: 0 auto;
+}
+.header-wrap{
+    max-width: 1366px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gnb > li > a{
+    font-family: 'Rufina', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+#gnb{
+    display: flex;
+    column-gap: 45px;
+}
+.header-slogan p,h2{
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    font-family: 'Nova Flat', cursive;
+    text-align: center;
+}
+.header-slogan p{
+    font-size: 35px;
+}
+.header-slogan h2{
+    font-size: 50px;
+}
