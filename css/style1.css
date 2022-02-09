@@ -1,5 +1,7 @@
 body{
     font: normal 16px/1.5 "Noto Sans KR","Nanum Gothic","Rufina", sans-serif;
+}
+#first-section{
     background: url("../images/img-header.png") no-repeat 0 0 / cover;
 }
 a, a:link{
@@ -8,7 +10,7 @@ a, a:link{
 }
 
 header{
-    margin-top: 30px;
+    padding-top: 50px;
 }
 nav > ul > li > a{
     font-family: 'Rufina', serif;
@@ -18,10 +20,10 @@ nav > ul > li > a{
 @media screen and (min-width:1200px){
     .container{
        max-width: 1366px !important;
+       /* height: 100vh; */
     }
 }
 #header-slogan{
-    margin-top: 400px;
 }
 #header-slogan p,h2{
     font-family: 'Nova Round', cursive;
@@ -35,9 +37,62 @@ nav > ul > li > a{
 #header-slogan h2{
     font-size: 50px;
 }
-#listdot > ul > li > a{
-    width: 10px;
-    height: 10px;
+#list-dot > ul{
+    position: fixed;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+}
+
+#list-dot > ul > li > a{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: white;
+    margin-bottom: 20px;
+}
+.section:nth-child(2){
+    background-color: #eeeeee;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    color: #00498C;
+
+    font-weight: bold;
+    
+    font-family: 'Rufina', serif;
+    border-bottom: 2px solid #00498C;
+    margin-bottom: 50px;
+}
+.roomswrap{
+    display: flex;
+}
+#roomsbox1{
+    display: flex;
+    justify-content: space-around;
+}
+#roomsbox1 > div{
+    width: 525px;
+    height: 600px;
+    border: 1px solid black;
+    box-shadow: 4px 10px 5px rgba(0, 0, 0, 0.6);
+}
+#roomslist-dot > ul{
+    margin-top: 60px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+#roomslist-dot > ul > li > a{
+    display: inline-block;
+    width: 40px;
+    height: 8px;
+    border: 1px solid #9c9c9c;
+    margin-bottom: 20px;    
+}
+#roomslist-dot > ul > li:nth-child(3) > a{
+    background-color: #00498C;
+    border: 0;
 }
