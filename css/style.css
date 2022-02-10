@@ -1,0 +1,15 @@
+body {
+    font: normal 16px/1.5 "Noto Sans KR","Nanum Gothic", sans-serif;
+}
+a,a:link{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background: url("../images/img-header.png") no-repeat 0 0 / cover;
+}
+
+#gnb {
+    list-style: none;
+}
