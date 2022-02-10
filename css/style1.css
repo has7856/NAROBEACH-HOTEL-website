@@ -193,3 +193,44 @@ nav > ul > li > a{
     position: relative;
     top: 100px;
 }
+
+#footer{
+    background-color: #00284E;
+    color: white;
+    padding: 30px;
+    font-size: 14px;
+}
+#footer-first > img{
+    margin-bottom: 20px;
+}
+#footer > div{
+    display: flex;
+}
+#footer div h3{
+    padding-bottom: 5px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Nova Round', cursive;
+    border-bottom: 1px solid white;
+}
+#footer-second div{
+    display: flex;
+}
+.footer-list{
+    display: flex;
+}
+.footer-list ul li{
+    line-height: 30px;
+}
+.footer-list ul:first-child{
+    margin-right: 30px;
+}
+.footer-textbox{
+    border-right: 1px solid white;
+}
+.footer-textbox:last-child{
+    border: 0;
+}
+.footer-textbox h3{
+    margin-bottom: 20px;
+}
