@@ -13,7 +13,7 @@ if(G5_COMMUNITY_USE === false) {
 ?>
 
 <footer>
-    <img src="<?php echo G5_THEME_URL?>/images/tail.png" alt="footer">
+    공통푸터
 </footer>
 
 <?php

@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 body {
     font: normal 16px/1.5 "Noto Sans KR","Nanum Gothic", sans-serif;
 }
 a,a:link{
+=======
+body{
+    font: normal 16px/1.5 "Noto Sans KR","Nanum Gothic","Rufina", sans-serif;
+}
+a, a:link{
+>>>>>>> d589285ff1566a51b5a46dd2dfcb3a696ebdf502
     text-decoration: none;
     color: white;
 }
 
+<<<<<<< HEAD
 body{
     background: url("../images/img-header.png") no-repeat 0 0 / cover;
 }
@@ -13,3 +21,76 @@ body{
 #gnb {
     list-style: none;
 }
+=======
+header{
+    background: url("../images/img-header.png") center / cover;
+    min-height: 1080px;
+}
+.header-main{
+    width: 100%;
+    margin: 0 auto;
+}
+.header-wrap{
+    max-width: 1366px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gnb > li > a{
+    font-family: 'Rufina', serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+#gnb{
+    display: flex;
+    column-gap: 35px;
+}
+/* .header-slogan */
+.header-slogan{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-slogan p,h2{
+    text-shadow: 3px 3px 4px black;
+    color: white;
+    text-align: center;
+    font-family: 'Nova Round', cursive;
+}
+.header-slogan p{
+    font-size: 35px;
+}
+.header-slogan h2{
+    font-size: 50px;
+}
+.list-dot{
+    position: absolute;
+    top: 50%;
+    right: 14%;
+    transform: translate(-50%,-50%);
+
+}
+.list-dot > ul > li{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 45px;
+}
+/* section tag */
+.bg{
+    min-height: 1080px;
+    background-color: #eeeeee;
+}
+.bg > h1{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Rufina', serif;
+    text-align: center;
+    padding-top: 100px;
+    color: #00498C;
+}
+>>>>>>> d589285ff1566a51b5a46dd2dfcb3a696ebdf502
