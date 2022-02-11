@@ -1,3 +1,8 @@
+
+
+/* index.html */
+
+
 body{
     font: normal 16px/1.5 "Noto Sans KR","Nanum Gothic","Rufina", sans-serif;
 }
@@ -91,7 +96,7 @@ nav > ul > li > a{
     background-color: #00498C;
 }
 #roomsbox1 > div > div:nth-child(2) > p{
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     color: white;
     font-size: 18px;
@@ -176,6 +181,7 @@ nav > ul > li > a{
     color: #00498C;
 }
 #section-icon{
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     column-gap: 80px;
@@ -207,11 +213,12 @@ nav > ul > li > a{
     display: flex;
 }
 #footer div h3{
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     display: inline-block;
     font-size: 20px;
     font-family: 'Nova Round', cursive;
     border-bottom: 1px solid white;
+    margin-bottom: 20px;
 }
 #footer-second div{
     display: flex;
@@ -233,4 +240,106 @@ nav > ul > li > a{
 }
 .footer-textbox h3{
     margin-bottom: 20px;
+}
+#footer-second > ul > li > i{
+    margin-right: 10px;
+}
+#footer-second > ul > li{
+    margin-bottom: 20px;
+}
+#footer-second > ul > li > a{
+    margin-right: 10px;
+}
+#footer-second > ul > li > a > i{
+    font-size: 20px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 10px;
+    width: 10px;
+    border: 0;
+    background: white;
+    left: 50%;
+    top: 50%;
+    margin: -5px 0 0 -5px;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+#fp-nav ul li, .fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 20px;
+    left: -255px;
+    position: relative;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 20px;
+    width: 20px;
+    margin: -10px 0 0 -10px;
+    border-radius: 100%;
+}
+
+/* about.html */
+
+.header-about > h2{
+    font-size: 70px !important;
+    text-align: center;
+}
+.header-about > ul{
+    display: flex;
+    justify-content: center;
+}
+.header-about > ul > li{
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+#mouse{
+    height: 50px;
+    width: 35px;
+    border-radius: 20px;
+    transform: none;
+    border: 3px solid white;
+}
+#wheel{
+    animation: mouse-wheel 1.2s ease infinite;
+    height: 10px;
+    width: 4px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+    position: relative;
+}
+#scroll-icon-box{
+    position: fixed;
+    margin: auto;
+    bottom: 4%;
+    left: calc(50% - 13px);
+    width: 26px;
+}
+@keyframes mouse-wheel{
+    0{
+        top: 1px;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50%{
+        top: 2px;
+    }
+    100%{
+        top: 3px;
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
 }
