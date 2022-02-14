@@ -13,25 +13,12 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://hasdesign.dothome.co.kr/naro/images">
 
-    <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
-
-    <!-- 아래는 선택사항입니다. css3:false 옵션을 쓰시면서 "linear", "swing" 또는 "easeInOutCubic" 대신 다른 전환(easing) 효과를 원하시는 경우에만 필요합니다. -->
-    <script src="vendors/easings.min.js"></script>
-
-    <!-- 아래 선은 `scrollOverflow:true` 옵션을 쓰시는 경우에만 넣으셔야 합니다. -->
-    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
-
-    <script type="text/javascript" src="dist/fullpage.js"></script>
-
-    <link rel="stylesheet" href="fullPage.js-master/fullpage.min.css">
-    <script src="fullPage.js-master/fullpage.min.js"></script>
 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,8 +33,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 
-    <script src="https://kit.fontawesome.com/7ce992cc35.js" crossorigin="anonymous"></script>
-    <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d10994c855.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -55,7 +41,7 @@
         <header class="row">
             <div class="col-sm-3">
                 <a href="#">
-                    <img src="images/logo.png" alt="나로비치호텔">
+                    <img src="images/logo.png" alt="나로비치호텔" id="logo">
                 </a>
             </div>
             <nav class="col-sm-6 offset-sm-3">
@@ -67,38 +53,91 @@
                     <li><a href="#">CUSTOMER</a></li>
                 </ul>
             </nav>
-        </header>
-    </div>
-
-    <div class="col-sm-4 offset-sm-4 fixed-top" id="list-dot">
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </div>
-    <div id="fullpage">
-        <div class="section" id="first-section">
-            <div class="col-sm-4 offset-sm-4 header-about" id="header-slogan">
-                <h2>
-                    A B O U T
-                </h2>
-                <ul>
-                    <li>인사말</li>
-                    <li>연혁</li>
-                    <li>CI/BI소개</li>
-                    <li>오시는길</li>
-                </ul>
-            </div>
             <div id="scroll-icon-box">
                 <div id="mouse">
                     <div id="wheel"></div>
                 </div>
             </div>
+        </header>
+    </div>
+    <div class="section" id="first-about">
+        <div class="col-sm-4 offset-sm-4 header-about" id="about-header">
+            <h2>
+                A B O U T
+            </h2>
+            <ul>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">CI/BI소개</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
         </div>
-        
+    </div>
+    <div class="section" id="greetings">
+        <div class="row align-items-center h-100 col-sm-3 offset-sm-7" id="about-greetings">
+            <div class="greetings-wrap">
+                <p>
+                    맑은 햇살과 따뜻한 바닷바람이<br>
+                    시작되는 나로도에서<br>
+                    우리 함께 아름답고<br>
+                    편안한 여행을 합시다.
+                </p>
+                <p>
+                    <a href="#">(주)나로씨티 대표 이낙천 <i class="fas fa-solid fa-angle-right"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section col-sm-8 offset-sm-2 about-contents" id="ci-bi">
+        <div>
+            <h2>CI/BI</h2>
+            <p class="ci-color">
+                NARO의 두가지 컬러는<br>
+                우주와 바다를 상징합니다.
+            </p>
+            <p class="ci-contents">
+                나로 비치 호텔의 wordmark는 기본적으로 우주를 모티브로 하고 있으며<br>
+                알파벳 A를 우주 로켓으로 상징화하여 바다에서<br>
+                우주를 향해 날아가는 우주선의 모습을 나타내고 있습니다.<br>
+                Deep Blue 색상은 우주를, Cobalt Blue 색상은 바다를 상징하고 있습니다.<br>
+                R과 O를 관통하는 포물선은 우주 셔틀 발사의 이미지를 형상화 하였고<br>
+                오른쪽 상단의 포물선과 균형을 이루어 도전, 진취, 성공을 상징합니다.<br>
+                항공 우주산업의 메카 고흥 나로도를 대표 하여 성장하는<br>
+                기업이 되고자 하는 포부가 담겨 있습니다.
+            </p>
+            <div class="download">
+                <a href="#">AI파일</a>
+                <a href="#">JPEG파일</a>
+            </div>
+        </div>
+        <div>
+            <img src="images/cibi.png" alt="#" class="cibi">
+        </div>
+    </div>
+    <div class="section col-sm-8 offset-sm-2 about-contents" id="history">
+        <div>
+            <h2>HISTORAY</h2>
+        </div>
+        <div class="history-bar">
+        </div>
+        <div class="historybox-wrap">
+            <div class="history-box">
+                2009
+            </div>
+            <div class="history-box">
+                2010
+            </div>
+            <div class="history-box">
+                2011
+            </div>
+            <div class="history-box">
+                2012
+            </div>
+            <div class="history-box">
+                2016
+            </div>
+        </div>
+    </div>
     </div>
 
 
@@ -108,15 +147,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
-
-    <script>
-        new fullpage("#fullpage", {
-            scrollingSpeed: 800,
-            autoScrolling: true
-        });
-
-        
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

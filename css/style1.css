@@ -286,14 +286,19 @@ nav > ul > li > a{
 }
 
 /* about.html */
-
+#first-about{
+    background: url("../images/img-header.png") no-repeat 0 0 / cover;
+    height: 100vh;
+}
 .header-about > h2{
     font-size: 70px !important;
     text-align: center;
+    padding-top: 70%;
 }
 .header-about > ul{
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 .header-about > ul > li{
     margin: 15px;
@@ -342,4 +347,85 @@ nav > ul > li > a{
         -ms-transform: translateY(6px);
         transform: translateY(6px);
     }
+}
+#greetings{
+    background: url("../images/about-hello.png") no-repeat 0 0 / cover;
+    height: 100vh;
+}
+#about-greetings{
+    height: inherit;
+}
+.greetings-wrap{
+    border: 1px solid white;
+    width: 500px;
+    height: 400px;
+
+}
+#about-greetings > div > p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+#about-greetings > div > p:first-child{
+    margin-top: 25%;
+}
+#about-greetings > div > p:nth-child(2){
+    font-size: 20px;
+}
+.about-contents > div > h2{
+    text-shadow: none;
+    color: #00498C;
+    text-align: left;
+    border-bottom: 2px solid #00498C;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+#ci-bi{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.ci-color{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.ci-contents{
+    font-size: 18px;
+}
+.download{
+    display: flex;
+}
+.download > a{
+    margin-top: 20px;
+    color: #777777;
+    border: 1px solid #777777;
+    margin-right: 15px;
+    padding: 7px 10px;
+}
+.download > a:hover{
+    background-color: #dbdbdb;
+}
+#history{
+    padding-top: 100px;
+}
+.history-bar{
+    height: 100px;
+    background: linear-gradient( to right, #00498C, #00152b);
+}
+.history-box{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient( to right, #00498C, #00152b);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 150px;
+    font-weight: 400;
+}
+.historybox-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -70px;
 }
