@@ -23,8 +23,7 @@ nav > ul > li > a{
        /* height: 100vh; */
     }
 }
-#header-slogan{
-}
+
 #header-slogan p,h2{
     font-family: 'Nova Round', cursive;
     color: white;
@@ -142,4 +141,55 @@ nav > ul > li > a{
 .date{
     position: absolute;
     right: 0;
+}
+
+
+/* =============== 효성 담당 ================ */
+.row-wrap {
+    background: dodgerblue;
+    padding: 15px 0;
+    color: white;
+}
+.breadcrumb, .article-wrap {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.article-wrap h2, .article-wrap h3 {
+    text-align: center;
+}
+.d-none {
+    display: none
+}
+
+.room {
+    background: #C4C4C4;
+    width: 1366px;
+    height: 587px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.imgs {
+    flex: 1;
+}
+.imgs .big img{
+    object-fit: cover;
+    width: 100%;
+}
+.imgs .small {
+    display: flex;
+    column-gap: 10px;
+    margin: 30px 0 0 0;
+}
+.small img {
+    max-width: 100%;
+}
+.info {
+    text-align: right;
+    flex: 1
 }
