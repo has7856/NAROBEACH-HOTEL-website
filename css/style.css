@@ -2,7 +2,9 @@
 
 /* index.html */
 
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font: normal 16px/1.5 "Noto Sans KR","Nanum Gothic","Rufina", sans-serif;
 }
@@ -13,10 +15,14 @@ a, a:link{
     text-decoration: none;
     color: white;
 }
-
 header{
     padding-top: 50px;
 }
+.nav{
+    background-color: black;
+}
+
+
 nav > ul > li > a{
     font-family: 'Rufina', serif;
     font-weight: bold;
@@ -55,11 +61,7 @@ nav > ul > li > a{
     background-color: white;
     margin-bottom: 20px;
 }
-.section:nth-child(2){
-    background-color: #eeeeee;
-}
 .title{
-    padding-top: 50px;
     text-align: center;
     font-size: 50px;
     color: #00498C;
@@ -69,6 +71,7 @@ nav > ul > li > a{
     font-family: 'Rufina', serif;
     border-bottom: 2px solid #00498C;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 .roomswrap{
     display: flex;
@@ -109,14 +112,16 @@ nav > ul > li > a{
 }
 #roomslist-dot > ul > li > a{
     display: inline-block;
-    width: 40px;
-    height: 8px;
-    border: 1px solid #9c9c9c;
-    margin-bottom: 20px;    
+    font-size: 30px;
+    color: #00498C;
+    margin-bottom: 20px; 
 }
 #roomslist-dot > ul > li > a:hover{
-    background-color: #00498C;
     border: 0;
+    color: #ff9999;
+}
+#notice{
+    margin-top: -200px;
 }
 #noticebox1{
     display: flex;
@@ -380,6 +385,10 @@ nav > ul > li > a{
     display: inline-block;
     margin-bottom: 30px;
 }
+#popup-btn:hover{
+    color: #00498C;
+    cursor: pointer;
+}
 #ci-bi{
     display: flex;
     justify-content: space-between;
@@ -405,6 +414,9 @@ nav > ul > li > a{
 }
 .download > a:hover{
     background-color: #dbdbdb;
+}
+.cibi-img{
+    margin-top: 70px;
 }
 #history{
     padding-top: 100px;

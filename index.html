@@ -48,10 +48,10 @@
 </head>
 
 <body>
-    <div class="container fixed-top">
+    <div class="container fixed-top" id="navigation">
         <header class="row">
             <div class="col-sm-3">
-                <a href="#">
+                <a href="index.html">
                     <img src="images/logo.png" alt="나로비치호텔" id="logo">
                 </a>
             </div>
@@ -79,7 +79,7 @@
         </div>
         <div class="section" id="second-section">
             <div class="container">
-                <div class="col-sm-2 offset-sm-5">
+                <div class="align-middle col-sm-2 offset-sm-5">
                     <h1 class="title">ROOMS</h1>
                 </div>
                 <div class="col-sm-10 offset-sm-1" id="roomsbox1">
@@ -119,18 +119,15 @@
             </div>
             <div class="col-sm-4 offset-sm-4" id="roomslist-dot">
                 <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="section" id="third-section">
             <div class="container">
                 <div class="col-sm-2 offset-sm-5">
-                    <h1 class="title">NOTICE</h1>
+                    <h1 class="title" id="notice">NOTICE</h1>
                 </div>
                 <div class="col-sm-10 offset-sm-1" id="noticebox1">
                     <div>
@@ -299,11 +296,23 @@
             autoScrolling: true,
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['first-section', 'second-section', 'third-section', 'fourth-section', 'fiveth-section'],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
-            
+            onLeave: function (origin, destination, direction) {
+                var leavingSection = this;
+
+                //구역 2를 떠난 후
+                if (direction == 'down') {
+                    $("#navigation").css("background-color", "#00498C");
+                    $("#navigation").css("transition", ".6s");
+                }
+
+                else if (origin.index == 1 && direction == 'up') {
+                    $("#navigation").css("background-color", "transparent");
+                    $("#navigation").css("transition", ".6s");
+                }
+            }
         });
     </script>
 </body>
